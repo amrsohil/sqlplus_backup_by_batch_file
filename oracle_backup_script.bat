@@ -45,7 +45,8 @@ set backuppath=D:\my_oracle_backup
 set firsttask=%dbname%-%_dd%-%_mm%-%_yyyy%.txt 
 set sqlplusexe=D:\oracle\dbhome_1\BIN\sqlplus.exe
 
-:: Commands and variables send to sqlplus, I think you can put whatever suits you here, each in a separate line, don't forget to add echo quit at the end to make script return to excution mode
+:: Commands and variables send to sqlplus, I think you can put whatever suits you here, each in a separate line
+:: Don't forget to add echo quit at the end to make script return to excution mode
 (
   echo $ exp %dbuname%/%dbname% file=%backuppath%-%_dd%-%_mm%-%_yyyy% LOG=%backuppath%-%_dd%-%_mm%-%_yyyy% ;
   echo quit
